@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mangattt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        :root {
+            --bgColor: var(--bgColor);
+        }
+
+        body {
+            background-color: var(--bgColor);
+            animation: colorChange 2s alternate infinite;
+        }
+
+        /* @keyframes colorChange {
+            to {
+                opacity: 0;
+            }
+
+            from {
+                opacity: 1;
+                background-color: var(--bgColor);
+            }
+        } */
+    </style>
+</head>
+
+<body id="jedag-jedug" style="background-color: pink;">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <button id="btn-sentuh" class="btn btn-lg btn-info text-light" style="width:250px; background-color: mintcream;" type="button"
+                onclick="clickAku()">
+                <marquee scrolldelay="80">wleeee</marquee>
+            </button>
+            <div id="message" class="d-none">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8 text-center">
+                        <img src="tata1.jpg" alt="" class="w-50">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 mt-4">
+                        <div class="card card-body shadow text-center">
+                            <h3>selamat pagi sayang</h3>
+                            <span id="text-message" class="mt-4">hiii sayang, hari ini lagi pms day 2 ya? sakit perutny
+                                 sayang? meski ga seratus persen bisa ngerasain kayak yg kamu rasain, tapiiii aku mau bilang,
+                                 jangan terlalu dipusingin banget ya, aku tau pms itu bisa bikin mood berantakan, badan
+                                 ngga nyaman, pegel pegel dan semua keliatan annoying, tapi percaya deh, ini juga cuma fase sementara,
+                                 ntar semua balik lagi ke keadaan yg lebih nyaman, jadi buang jauh jauh pikiran
+                                 negatifny, aku di sini kok siap sedia buat nyemangatin dan ngeladenin, mau ngobrolin
+                                 apa aja, curhat sana sini, atau malah sekadar manja manjaan hha, aku ada, aku yakin kamu kuat
+                                 melewatin ini, seperti yg selalu kamu lakukan, dan inget, kamu ga sendirian, aku
+                                 selalu ada di samping kamu, jadi santai aja yaa, tarik napas
+                                 dalam dalam kasih ruang buat tubuh dan pikiran kamu buat istirahat, dan kalo ada apa apa
+                                 bilang yaa sayang, everything's gonna be okay, aku di
+                                 sini, selalu ada buat kamu
+                                <hr> i love youuu more more more moreeee<br>
+                            </span>
+                            <span class="mt-4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+             var color = ['#FD8A8A', '#F1F7B5', '#A8D1D1', '#9EA1D4', '#C0DEFF', '#FFE5F1', '#FFF8E1']
+            let i = 0;
+            setInterval(() => {
+                document.body.style.setProperty('--bgColor', color[i]);
+                i++
+                if (i == color.length - 1) {
+                    i = 0
+                }
+            }, 1000);
+        })
+        function clickAku() {
+            $('#btn-sentuh').addClass('d-none')
+            $('#message').fadeIn("slow")
+            $('#message').delay(500).removeClass('d-none')
+        }
+    </script>
+</body>
+
+</html>
